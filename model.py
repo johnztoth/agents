@@ -1,5 +1,11 @@
 # model.py
 # Agents!
+#
+# Define a number of Agents, each with a random x and y coordinate
+# Cycle through a number of iterations
+# For each iteration randomly move the agent by 1 unit in each direction
+# Calculate the final distance between all the agents
+# Plot the final agent positions using Matplotlib.pyplot
 
 import operator
 import matplotlib.pyplot
@@ -31,7 +37,6 @@ matplotlib.pyplot.xlim(0, 99)
 for i in range(num_of_agents):
     matplotlib.pyplot.scatter(agents[i].x,agents[i].y,color="blue")
 
-
 # Distance between all agents (redundant)
 for agents_row_a in agents:
     for agents_row_b in agents:
@@ -60,5 +65,6 @@ matplotlib.pyplot.scatter(agents[dmin[0]].x,agents[dmin[0]].y,color="green")
 matplotlib.pyplot.scatter(agents[dmin[1]].x,agents[dmin[1]].y,color="green")
 
 matplotlib.pyplot.show()
+
 
 
