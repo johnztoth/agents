@@ -1,14 +1,20 @@
-# agentframework.py
+""" agentframework.py """
 
 import random
 
 class Agent():
+    """ initialise and move an agent object"""
     
     def __init__ (self):
+        """ initialise the agent object with a randon position """
         self._x = random.randint(0,99)
         self._y = random.randint(0,99)
 
+    
     def move(self):
+        """ randonly move the agent by one unit in x and y direction """
+        """ if the agent moves over 99 shift position to 0 """
+        """ if the agent moves under 0 shift position to 99 """
         if random.random() < 0.5:
             self._y = (self._y + 1) % 100
         else:
