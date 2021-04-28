@@ -12,5 +12,5 @@ The two closest Agents and the two furthest Agents are highlighted on the scatte
 
 The main program is in model.py. The module containg the Agent class is in agentframework.py
 
-To run type python model.py
+To run type> python model.py
 
